@@ -8,13 +8,12 @@ public class NumberSearch {
     for (int number = 100; number <= 1000; number++) {
       if(number % 5 == 0 && number % 6 == 0) {
         count++;
-        System.out.print(number + " ");
-      } if (count==10) { 
+        System.out.print(number + " "); 
+        }
+      if (count==10) { 
         count = 0;
-        System.out.println("");
-        
-
-      } 
+        System.out.println();
+      }
       }
       
     
