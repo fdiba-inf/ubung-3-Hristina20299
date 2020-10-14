@@ -9,8 +9,7 @@ public class NumberSearch {
       if(number % 5 == 0 && number % 6 == 0) {
         count++;
         System.out.print(number + " ");
-      }
-      if (count==10) { 
+      } if (count==10) { 
         count = 0;
         System.out.print("\n");
         
