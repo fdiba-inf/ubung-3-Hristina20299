@@ -14,33 +14,31 @@ public class Triangle {
           double s = (a + b + c) / 2.0;
           double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
           System.out.println("Area: " + area);
-          System.out.println("Triangle: isosceles");
+          System.out.println("Triangle: equilaretal");
           break;
         } else {
           if (a == b || b == c) {
           double s = (a + b + c) / 2.0;
           double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
           System.out.println("Area: " + area);
-          System.out.println("Triangle: scalene");
+          System.out.println("Triangle: isosceles");
           break;
           } else {
-            if (a == b && b == c && c == a) {
           double s = (a + b + c) / 2.0;
           double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
           System.out.println("Area: " + area);
-          System.out.println("Triangle: equilaretal");
+          System.out.println("Triangle: scalene");
           break;
             }
           }
-        }
       } else {
         System.out.println("Values are not correct!");
         break;
 
       }
+      a = input.nextDouble();
+      b = input.nextDouble();
+      c = input.nextDouble();
     } while (a > 0 && b > 0 && c > 0);
-  a = input.nextDouble();
-  b = input.nextDouble();
-  c = input.nextDouble();
   }
 }
