@@ -14,10 +14,10 @@ public class Triangle {
           double s = (a + b + c) / 2.0;
           double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
           System.out.println("Area: " + area);
-          System.out.println("Triangle: equilaretal");
+          System.out.println("Triangle: equilateral");
           break;
         } else {
-          if (a == b || b == c) {
+          if (a == b || b == c || a == c) {
           double s = (a + b + c) / 2.0;
           double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
           System.out.println("Area: " + area);
