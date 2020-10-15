@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class AngleCalculation {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    double value = input.nextDouble();
+    double number = input.nextDouble();
     char type = input.next().charAt(0);
      do {
        if (type == 'r') {
-        double grad = value * (180 / Math.PI);
-        System.out.println("Angle: " + grad + " d");
+        double grad = number * (180/Math.PI);
+        System.out.println("Angle: " + grad + "d");
         
-        break;
        } else {
-         double radiant = value * (Math.PI / 180);
-         System.out.println("Angle: " + radiant + " r");
+         double radiant = number * (Math.PI/180);
+         System.out.println("Angle: " + radiant + "r");
          
-         break;
        } 
+       number = input.nextDouble();
+       type = input.next().charAt(0);
     } while (type == 'r' || type == 'd');
   } 
 }
