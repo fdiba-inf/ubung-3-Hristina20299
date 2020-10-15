@@ -9,15 +9,15 @@ public class AngleCalculation {
     char type = input.next().charAt(0);
      do {
        if (type == 'r') {
-        double grad = value * (180 / Math.PI);
+        double grad = (180 * value) / Math.PI;
         System.out.println("Angle: " + grad + " d");
         break;
        } else {
-         if (type == 'd');
-         double radiant = value * (Math.PI / 180);
+         double radiant = (value * Math.PI) / 180;
          System.out.println("Angle: " + radiant + " r");
          break;
        }
+       
       
     } while (type == 'r' || type == 'd');
   } 
