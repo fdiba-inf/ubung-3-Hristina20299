@@ -36,9 +36,10 @@ public class Triangle {
         break;
 
       }
-      a = input.nextDouble();
-      b = input.nextDouble();
-      c = input.nextDouble();
     } while (a > 0 && b > 0 && c > 0);
+    a = input.nextDouble();
+    b = input.nextDouble();
+    c = input.nextDouble();
   }
+
 }
